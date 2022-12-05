@@ -61,7 +61,7 @@ jobs:
         additionalArguments: --what-if
   deploy:
     runs-on: ubuntu-latest
-    environment: MyAzureEnvironment
+    environment: Website
     outputs:
       appServiceAppHostName: ${{ steps.deploy.outputs.appServiceAppHostName }}
     needs: [preview]
